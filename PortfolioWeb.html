@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="home" class="logo">Chey</a>
+
+        <nav>
+            <a href="#home" class="active"> Home</a>
+            <a href="#" >Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#" >Services</a>
+            <a href="#projects" >Projects</a>
+        </nav>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="gradient-btn">Contact Me</button>
+    </header>
+
+    <!--HOME-->
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, it's <span>Chey</span></h1>
+            <h3 class="typing-text">I'm a&nbsp;<div class="typing-text"><span></span></div></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.gg/7sbYqC8x"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.youtube.com/@CHI-DEW25"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <!--EXPERIENCE-->
+    <section id="experience" class="experience">
+    <h2 class="experience-title">Experience</h2>
+    
+        <div class="experience-info">
+        <!-- Grid container with 4 separate cards -->
+            
+            <div class="grid">
+            <!-- Card 1 -->
+                <div class="grid-card">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Frontend Development</span>
+                    <h3>X Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore dolores esse.</p>
+                </div>
+            
+            <!-- Card 2 -->
+                <div class="grid-card">
+                    <i class='bx bxs-lock'></i>
+                    <span>Graphic Design</span>
+                    <h3>Y Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore dolores esse.</p>
+                </div>
+            
+            <!-- Card 3 -->
+                <div class="grid-card">
+                    <i class='bx bx-laptop'></i>
+                    <span>UI/UX Designer</span>
+                    <h3>Z Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore dolores esse.</p>
+                </div>
+            
+            <!-- Card 4 -->
+                <div class="grid-card">
+                    <i class='bx bx-list-ul'></i>
+                    <span>Backend</span>
+                    <h3>C Years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore dolores esse.</p>
+                </div>
+            </div>
+            
+            <div class="experience-img">
+                <img src="main.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--PROJECTS-->
+    <section id="projects" class="projects">
+        <h2 id="project-title">Recent Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="Project1.webp" alt="">
+                <h3>Project X</h3>
+                <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minus labore dolores esse.</p>
+                <div class="btn-group">
+                    <button class="btn-project">Live Demo</button>
+                    <button class="btn-project">Github Repo</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Project2.webp" alt="">
+                <h3>Project Y</h3>
+                <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minus labore dolores esse.</p>
+                <div class="btn-group">
+                    <button class="btn-project">Live Demo</button>
+                    <button class="btn-project">Github Repo</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.webp" alt="">
+                <h3>Project Z</h3>
+                <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minus labore dolores esse.</p>
+                <div class="btn-group">
+                    <button class="btn-project">Live Demo</button>
+                    <button class="btn-project">Github Repo</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="input">
+                <input type="text" placehoolder="example@email.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="btn-project">Submit</div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#home"></a>
+            </li>
+
+            <li>
+                <a href="#education"></a>
+            </li>
+
+            <li>
+                <a href="#experience"></a>
+            </li>
+
+            <li>
+                <a href="#services"></a>
+            </li>
+
+            <li>
+                <a href="#contact"></a>
+            </li>
+        </ul>
+
+        <p class="copyright">@ All Rights Reserved | Chey Okpala</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
