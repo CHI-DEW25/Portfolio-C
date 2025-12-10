@@ -635,6 +635,12 @@ footer ul li a{
         display: none;
     }
 
+    .typing-text{
+        font-size: 2.5rem;  /* Reduce font size */
+        min-width: auto;     /* Remove minimum width constraint */
+        white-space: nowrap; /* Prevent line breaks */
+    }
+
     .input-box input{
         padding: 1rem 2rem;
         font-size: 1.8rem;
