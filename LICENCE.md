@@ -1,12 +1,7 @@
 
 Copyright (c) 2025 Chey O.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, and distribute the Software for personal, educational, and non-commercial purposes only. Commercial use of any kind—including selling copies, sublicensing, using the Software in paid work or services, or incorporating it into any product intended for sale or monetary gain—is strictly prohibited unless explicit written permission is granted by the owner. All rights not expressly granted remain reserved by the owner.
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
