@@ -1,7 +1,7 @@
 Portfolio‑C
 
 
-Hii!
+Hiii!
 
 
 📘 Overview: Portfolio‑C is a personal portfolio website built using HTML, CSS, and vanilla JavaScript, designed to showcase skills, projects, and professional background in a clean, modern, and responsive layout that works seamlessly across desktop, tablet, and mobile devices, providing an optimal user experience while remaining lightweight and fast-loading, making it ideal for hosting on GitHub Pages, Netlify, or any static hosting platform.
