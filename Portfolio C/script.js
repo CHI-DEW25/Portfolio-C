@@ -67,3 +67,44 @@ window.addEventListener('resize', () => {
     }
     windowWidth = window.innerWidth;
 });
+
+// Intersection Observer for scroll animations
+const observerOptions = {
+    threshold: 0.1,  // Reduced threshold
+    rootMargin: '0px'  // Simplified margin
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            observer.unobserve(entry.target); // Stop observing after animation
+        }
+    });
+}, observerOptions);
+
+// Observe home section elements - IMMEDIATELY on load
+const homeContent = document.querySelector('.home-content');
+const homeImg = document.querySelector('.home-img');
+
+if (homeContent) {
+    observer.observe(homeContent);
+    // Force animation if already in view
+    setTimeout(() => {
+        const rect = homeContent.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            homeContent.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+    }, 100);
+}
+
+if (homeImg) {
+    observer.observe(homeImg);
+    // Force animation if already in view
+    setTimeout(() => {
+        const rect = homeImg.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            homeImg.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+    }, 100);
+}
