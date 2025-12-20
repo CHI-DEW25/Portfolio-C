@@ -57,6 +57,33 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Hide/show header on scroll
+let lastScrollTop = 0;
+let scrollTimeout;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Hide header when scrolling down
+    if (scrollTop > lastScrollTop && scrollTop > 150) {
+        header.classList.add('hidden');
+    } else {
+        // Show header when scrolling up
+        header.classList.remove('hidden');
+    }
+    
+    // Clear existing timeout
+    clearTimeout(scrollTimeout);
+    
+    // Show header when user stops scrolling
+    scrollTimeout = setTimeout(() => {
+        header.classList.remove('hidden');
+    }, 150);
+    
+    lastScrollTop = scrollTop;
+});
+
 // Handle window resize
 let windowWidth = window.innerWidth;
 
