@@ -45,6 +45,15 @@ header{
     gap: 5rem
 }
 
+header {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-150px);
+    opacity: 0;
+}
+
 nav{
     position: absolute;
     left: 50%;
@@ -645,42 +654,6 @@ footer ul li a{
         min-width: auto;     /* Remove minimum width constraint */
         white-space: nowrap; /* Prevent line breaks */
     }
-
-    /*nav{
-        position: fixed;
-        top: 90px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 1rem;
-        width: 85%;
-        padding: 1rem 0;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background: rgba(0,0,0,0.9);
-        backdrop-filter: blur(10px);
-        border-radius: 3rem;
-        display: none;
-        gap: 0;
-        z-index: 99;
-    }
-
-    nav.active{
-        display: flex;
-    }
-
-    nav a{
-        display: block;
-        font-size: 1.8rem;
-        color: white !important;
-        padding: 1.8rem 2rem;
-        margin: 0;
-        font-weight: 500;
-        transition: 0.3s ease;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        text-align: center;
-    } */
 
     nav{
         position: fixed;
