@@ -46,12 +46,11 @@ header{
 }
 
 header {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header.hidden {
-    transform: translateY(-150px);
-    opacity: 0;
+    transform: translateX(-50%) translateY(-150%);
 }
 
 nav{
@@ -397,7 +396,7 @@ span{
 }
 
 .experience-img img{
-    width: 35vw;
+    width: 45vw;
     max-width: 400px;
     border-radius: 3rem;
 }
@@ -406,13 +405,13 @@ span{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .grid-card{
     border: 2px solid black;
     border-radius: 3rem;
-    padding: 4rem 3rem;
+    padding: 5rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -523,13 +522,7 @@ span{
     color: black;
 }
 
-.project-card{
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-/*CONTACT * FOOTER*/
-
+/*CONTACT + FOOTER*/
 .input-box h2{
     text-align: center;
     font-size: 4rem;
@@ -827,6 +820,29 @@ footer ul li a{
     .project-card img{
         width: 100%;
         max-width: 350px;
+    }
+
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        margin-top: 3rem; /*5rem*/
+    }
+
+    .input-box input{
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .input-box input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .input-box i{
+        display: none;
     }
 
     footer{
