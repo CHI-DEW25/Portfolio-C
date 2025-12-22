@@ -94,3 +94,48 @@ window.addEventListener('resize', () => {
     }
     windowWidth = window.innerWidth;
 });
+
+/* =========================
+   TOAST NOTIFICATION
+========================= */
+function showToast(message, title = "Hooray!") {
+    const container = document.getElementById("toast-container");
+
+    const toast = document.createElement("div");
+    toast.className = `toast ${type}`;
+
+    toast.innerHTML = `
+        <div class="toast-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="toast-content">
+            <div class="toast-title">${title}</div>
+            <div class="toast-message">${message}</div>
+        </div>
+        <div class="toast-close">&times;</div>
+    `;
+
+    container.appendChild(toast);
+
+    // Manual close
+    toast.querySelector(".toast-close").addEventListener("click", () => {
+        removeToast(toast);
+    });
+
+    // Auto dismiss
+    setTimeout(() => {
+        removeToast(toast);
+    }, 3000);
+}
+
+function removeToast(toast) {
+    toast.classList.add("exit");
+
+    setTimeout(() => {
+        toast.remove();
+    }, 500);
+}
+
+document.getElementById("contact-submit").addEventListener("click", () => {
+    showToast("Your message has been sent successfully.");
+});
