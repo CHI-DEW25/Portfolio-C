@@ -549,6 +549,48 @@ span{
     color: black;
 }
 
+.projects-more {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-more-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.2rem 3rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: #17aeb0;
+
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(
+            270deg,
+            #2de2e6 10%,
+            #1bc7c9 35%,
+            #17aeb0 70%,
+            #0f9fa1 100%
+        ) border-box;
+
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.projects-more-btn:hover {
+    color: white;
+    background:
+        linear-gradient(
+            270deg,
+            #2de2e6 10%,
+            #1bc7c9 35%,
+            #17aeb0 70%,
+            #0f9fa1 100%
+        );
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(23, 174, 176, 0.35);
+}
+
 /*CONTACT + FOOTER*/
 .input-box h2{
     text-align: center;
@@ -588,6 +630,47 @@ span{
     top: 50%;
     left: 10px;
     transform: translate(50%, -50%);
+}
+
+.submit-btn {
+    --base: #17aeb0;
+    --dark: #128c8e;
+    --light: #3fd1d3;
+
+    font-size: 1.8rem;
+    padding: 1.4rem 4rem;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+
+    background: linear-gradient(
+        120deg,
+        var(--dark),
+        var(--base),
+        var(--light),
+        var(--base),
+        var(--dark)
+    );
+
+    background-size: 300% 300%;
+    background-position: 0% 50%;
+
+    transition:
+        background-position 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-position: 100% 50%;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(23, 174, 176, 0.6);
+}
+
+.submit-btn:active {
+    transform: scale(0.97);
 }
 
 footer{
@@ -970,16 +1053,6 @@ footer ul li a{
 
     .input-box i{
         display: none;
-    }
-
-    .gradient-btn{
-        font-size: 1.8rem;
-        padding: 0.7rem 2rem;
-        border-radius: 3rem;
-        border: none;
-        cursor: pointer;
-        color: white;
-        font-weight: 500;
     }
 
     footer{
